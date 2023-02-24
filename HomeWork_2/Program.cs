@@ -38,37 +38,25 @@ namespace HomeWork_2
             switch (sign)
             {
                 case "+":
-                    {
-                        Console.WriteLine(operand1 + operand2);
-                        break;
-                    }
+                    Console.WriteLine(operand1 + operand2);
+                    break;
+
                 case "-":
-                    {
-                        Console.WriteLine(operand1 - operand2);
-                        break;
-                    }
+                    Console.WriteLine(operand1 - operand2);
+                    break;
                 case "*":
-                    {
-                        Console.WriteLine(operand1 * operand2);
-                        break;
-                    }
+                    Console.WriteLine(operand1 * operand2);
+                    break;
                 case "/":
-                    {
-                        if (operand2 == 0)
-                        {
-                            Console.WriteLine("Делить на 0 нельзя");
-                        }
-                        else
-                        {
-                            Console.WriteLine(operand1 / operand2);
-                        }
-                        break;
-                    }
+                    if (operand2 == 0)
+                        Console.WriteLine("Делить на 0 нельзя");
+                    else
+                        Console.WriteLine(operand1 / operand2);
+                    break;
                 default:
-                    {
-                        Console.WriteLine("Неизвестное математическое действие");
-                        break;
-                    }
+                    Console.WriteLine("Неизвестное математическое действие");
+                    break;
+
             }
         }
         static void Task2()
@@ -81,8 +69,8 @@ namespace HomeWork_2
             Console.Write("Введите число от 0 до 100: ");
 
             double number = Convert.ToDouble(Console.ReadLine());
-            
-            if ((number >=0) && (number <=14))
+
+            if ((number >= 0) && (number <= 14))
             {
                 Console.WriteLine($"Число от 0 до 14"); ;
             }
@@ -101,11 +89,7 @@ namespace HomeWork_2
             else
             {
                 Console.WriteLine($"Не соответсвует числовым промежуткам");
-             }
-
-
-
-
+            }
         }
         static void Task3()
         {
@@ -127,7 +111,7 @@ namespace HomeWork_2
             //int a = 0;
             //Console.Write("Введите число: ");
             //int number = Convert.ToInt32(Console.ReadLine());
-           
+
             //a = (number % 2);
 
             //if ( a == 0)
@@ -143,4 +127,4 @@ namespace HomeWork_2
 
     }
 }
- 
+
