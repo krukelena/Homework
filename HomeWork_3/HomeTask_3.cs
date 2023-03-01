@@ -30,13 +30,10 @@ namespace HomeWork_3
                 }
             }
             if (b != true) // совпадения не найдены, уведомляем
-            {
                 Console.WriteLine("Число " + number + " не найдено в массиве!");
-            }
             else
-            {
                 Console.WriteLine("Число " + number + " найдено в массиве!");
-            }
+            
         }
 
         //Создайте массив целых чисел.Удалите все вхождения заданного числа из массива.
@@ -57,6 +54,7 @@ namespace HomeWork_3
                 Console.WriteLine("Число " + number + " не найдено в массиве!!!");
             else
             {
+
                 int[] newArray = new int[newArrayLength];  // создаем новый массив
                 int j = 0;  //  создаем второй счетчик
 
@@ -94,12 +92,10 @@ namespace HomeWork_3
                 myArray[i] = random.Next();//присваеваем элементу массива случайное значение
                 Console.WriteLine(myArray[i]);//выводим массив элементов
             }
-
             Console.Write("Max number: ");
             {
                 Console.WriteLine(myArray.Max());
             }
-
             Console.Write("Min number: ");
             {
                 Console.WriteLine(myArray.Min());
@@ -132,8 +128,8 @@ namespace HomeWork_3
                 a[i] = random.Next(1, 20);
                 Console.Write(a[i] + " ");
                 firstAverageValue += a[i];
-            }
 
+            }
             Console.WriteLine("\nЭлементы второго массива: ");
             for (int i = 0; i < 5; i++)
             {
@@ -154,23 +150,5 @@ namespace HomeWork_3
             else
                 Console.WriteLine("\nСредние значения элементов обоих массивов равны.");
         }
-
-
     }
-
-
 }
-
-
-
-
-
-
-          
-
-
-            
-
-
-
-
