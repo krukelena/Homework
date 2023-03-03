@@ -128,7 +128,6 @@ namespace HomeWork_3
                 a[i] = random.Next(1, 20);
                 Console.Write(a[i] + " ");
                 firstAverageValue += a[i];
-
             }
             Console.WriteLine("\nЭлементы второго массива: ");
             for (int i = 0; i < 5; i++)
