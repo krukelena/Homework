@@ -56,13 +56,13 @@ namespace HomeWork_5
             creditCard2.PrintCreditCard();
             creditCard3.PrintCreditCard();
         }
+
         private static void Task3()
         {
             ATM atm = new ATM(20,10,32);
             atm.WithdrawCash(800);
             atm.WithdrawCash(550);
             atm.WithdrawCash(620);
-
         }
     }
 }
