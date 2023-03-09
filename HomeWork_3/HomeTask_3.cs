@@ -47,11 +47,15 @@ namespace HomeWork_3
             int number = int.Parse(Console.ReadLine());// считываем введеное число и преобразуем его
             int newArrayLength = array.Length;// создаем переменную для хранения нового массива
             for (int i = 0; i < array.Length; i++) //проходим цикл по каждому элементу массива для определения нового массива
+            {
                 if (array[i] == number) // сравниваем элемент массива с введеным числом
                     newArrayLength--; //уменьшаем размер массива
-
+            }
             if (newArrayLength == array.Length) //сравниваем длину нового массива с исходным, если длина равна, то не найдены совподения
+            {
+
                 Console.WriteLine("Число " + number + " не найдено в массиве!!!");
+            }
             else
             {
 
@@ -59,17 +63,24 @@ namespace HomeWork_3
                 int j = 0;  //  создаем второй счетчик
 
                 for (int i = 0; i < array.Length; i++)  // проходимся циклом по каждому элементу старого массива 
+                {
                     if (array[i] != number)  // если наткнемся на элемент, который не нужно удалять, то запишем его в новый массив
                         newArray[j++] = array[i];  // в случае совпадений переходим не следующий элемент
                                                    // иначе просто пропускаем символ, который необходимо удалить
-
-                Console.WriteLine("Массив до удаления введенного числа");
+                }
+                    Console.WriteLine("Массив до удаления введенного числа");
+                
                 for (int i = 0; i < array.Length; i++)
+                {
                     Console.Write(array[i] + " ");
-
+                }
                 Console.WriteLine("\nМассив после удаления введенного числа");
                 for (int i = 0; i < newArray.Length; i++)
+                {
                     Console.Write(newArray[i] + " ");
+
+                }
+
             }
         }
 
