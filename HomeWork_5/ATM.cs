@@ -24,8 +24,6 @@ namespace HomeWork_5
         public int TwentyDollarBillsCount;
         public int FiftyDollarBillsCount;
         public int HundredDollarBillsCount;
-
-
         public ATM(int twentyDollarBillsCount, int fiftyDollarBillsCount, int hundredDollarBillsCount)
         {
             TwentyDollarBillsCount = twentyDollarBillsCount;
@@ -73,6 +71,5 @@ namespace HomeWork_5
             Console.WriteLine();
             return true;
         }
-
     }
 }

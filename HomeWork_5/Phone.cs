@@ -17,7 +17,12 @@
 //которым будет отправлено  сообщение. Метод выводит на консоль номера этих телефонов.  
 public class Phone
 {
-	public Phone() { }
+
+    public string Number;
+    public string Model;
+    public double Weight;
+
+    public Phone() { }
 
 	public Phone(string number, string model)
 	{
@@ -29,12 +34,6 @@ public class Phone
 	{
 		Weight = weight;
 	}
-
-
-	public string Number;
-	public string Model;
-	public double Weight;
-
 
 	public void ReceiveCall(string name)
 	{

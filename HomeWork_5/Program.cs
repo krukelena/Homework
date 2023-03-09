@@ -64,8 +64,5 @@ namespace HomeWork_5
             atm.WithdrawCash(620);
 
         }
-
     }
-
-
 }

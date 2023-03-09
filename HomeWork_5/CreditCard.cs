@@ -21,28 +21,27 @@ namespace HomeWork_5
         //Выведите на экран текущее состояние всех трех карточек.
 
 
-        public string Number;
-        public double Cash;
+        public string number;
+        public double cash;
 
         public CreditCard(string number, double cash)
         {
-            this.Number = number;
-            this.Cash = cash;
+            this.number = number;
+            this.cash = cash;
         }
 
         public void ReplenishCash(double sum)
         {
-            Cash += sum;
+            cash += sum;
         }
 
         public void WithdrawCash(double sum)
         {
-            Cash -= sum;
+            cash -= sum;
         }
         public void PrintCreditCard()
         {
-            Console.WriteLine($"Номер счета: {Number} + Текущая сумма на карте: {Cash}");
+            Console.WriteLine($"Номер счета: {number} + Текущая сумма на карте: {cash}");
         }
     }
-
 }
