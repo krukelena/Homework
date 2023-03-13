@@ -14,13 +14,3 @@ namespace Task2
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
