@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Task2
 {
-    internal class Dentist
-    {
+    internal class Dentist : Doctor {
+
+        public override void Heal()
+        {
+            Console.WriteLine("Дантист начал лечить...");
+        }
     }
 }

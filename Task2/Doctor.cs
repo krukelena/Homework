@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Task2
 {
-    internal class Clinic
+    internal abstract class Doctor
     {
+        public abstract void Heal();
     }
 }

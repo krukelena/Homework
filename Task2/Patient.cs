@@ -8,5 +8,21 @@ namespace Task2
 {
     internal class Patient
     {
+
+        public TreatmentPlan Plan { get; set; }
+        public Doctor AttendingDoctor { get; set; }
+
+        public Patient(int code) => Plan = new(code);
+
+        public void AppointDoctor()
+        {
+            if (Plan.TreatmentCode == 1)
+                AttendingDoctor = new Surgeon();
+            else if (Plan.TreatmentCode == 2)
+                AttendingDoctor = new Dentist();
+            else
+                AttendingDoctor = new Therapist();
+            AttendingDoctor.Heal();
+        }
     }
 }

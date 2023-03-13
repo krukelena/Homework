@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Task2
 {
-    internal class Surgeon
+    internal class Surgeon : Doctor
     {
+        public override void Heal()
+        {
+            Console.WriteLine("Хирург начал лечить...");
+        }
     }
 }

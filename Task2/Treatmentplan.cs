@@ -9,10 +9,10 @@ namespace Task2
     internal class TreatmentPlan
     {
         public int TreatmentCode { get; set; }
+
         public TreatmentPlan(int treatmentCode)
         {
             TreatmentCode = treatmentCode;
-
         }
     }
 }

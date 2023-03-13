@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace Task2
 {
-    internal class Class1
+    internal class Therapist : Doctor
     {
+        public override void Heal()
+        {
+            Console.WriteLine("Терапевт начал лечить...");
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
