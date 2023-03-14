@@ -1,4 +1,4 @@
-﻿using Task2;
+﻿using HomeWork_6.Task2
 
 internal class Program
 {

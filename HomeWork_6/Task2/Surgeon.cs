@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task2
+namespace HomeWork_6.Task2
 {
-    internal class Dentist : Doctor {
-
+    internal class Surgeon : Doctor
+    {
         public override void Heal()
         {
-            Console.WriteLine("Дантист начал лечить...");
+            Console.WriteLine("Хирург начал лечить...");
         }
     }
 }
