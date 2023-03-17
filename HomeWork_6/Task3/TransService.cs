@@ -14,21 +14,18 @@ namespace HomeWork_6.Task3
         public static void Sort(Transport[] transports)
         {
             Transport temp;
-
-            for (int i = 1; i < transports.Length; i++)
+            bool isSwap = true;
+            while (isSwap)
             {
-                bool isSwap = true;
-                while (isSwap)
+                isSwap = false;
+                for (int j = 0; j < transports.Length - 1; j++)
                 {
-                    isSwap = false;
-                    for (int j = 0; j < transports.Length - i; j++)
+                    if (transports[j].NumberOfSeats > transports[j + 1].NumberOfSeats)
                     {
-                        if (transports[j].NumberOfSeats < transports[j + 1].NumberOfSeats)
-                        {
-                            temp = transports[j];
-                            transports[j] = transports[j + 1];
-                            transports[j + 1] = temp;
-                        }
+                        temp = transports[j];
+                        transports[j] = transports[j + 1];
+                        transports[j + 1] = temp;
+                        isSwap = true;
                     }
                 }
             }
