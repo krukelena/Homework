@@ -17,11 +17,3 @@ namespace HomeWork_8
         }
     }
 }
-
-
-
-
-
-
-
-
