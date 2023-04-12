@@ -22,8 +22,8 @@ public class Program
 {
     public static void Main()
     {
-        //ExecuteTask1();
-        //ExecuteTask2();
+        ExecuteTask1();
+        ExecuteTask2();
         ExecuteTask3();
     }
 
