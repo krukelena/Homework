@@ -13,7 +13,4 @@ namespace HomeWork_9
             return "Электро двигатель";
         }
     }
-
-
-
 }

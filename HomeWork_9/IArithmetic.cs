@@ -14,5 +14,3 @@ namespace HomeWork_9
         Single Sqrt();
     }
 }
-
-
